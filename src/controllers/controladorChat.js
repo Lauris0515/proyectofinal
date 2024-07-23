@@ -40,7 +40,7 @@ textoChat.addEventListener("keypress", function(event) {
         textoChat.value = ""; // Limpiar input después de enviar
 
         if (inputUsuario === "hola") {
-            let listaPreguntas = preguntas.map((pregunta, index) => `${pregunta}`).join('<br>');
+            let listaPreguntas = preguntas.map((pregunta, index) => `${index + 1}. ${pregunta}`).join('<br>');
             mensajesChat.innerHTML += `<p class="text-start fw-bold">hola bienvenido, selecciona entre estas opciones  <br> <br> ${listaPreguntas}</p>`;
         } else {
             let numeroPregunta = parseInt(inputUsuario) - 1;
