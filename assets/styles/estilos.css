@@ -2,8 +2,12 @@
     background-color: #2d6df6;
 }
 
+.azulfooter{
+    background-color: #02407E;
+}
+
 .banner{
-    background-image: url("../img/familia.jpg");
+    background-image: url("../img/banner.webp");
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
@@ -17,7 +21,7 @@
     z-index: 1;
 }
 
-.cajaChat{
+.cajaChat {
     position: fixed;
     bottom: 70px;
     right: 20px;
@@ -27,12 +31,22 @@
     border: 1px solid #e7e7e7;
     border-radius: 10px;
     z-index: 1;
+    display: none;
 }
 
-.textoChat{
+.mensajesChat {
+    overflow-y: auto;
+    height: 80%; /* Ajusta al tamaño deseado, pero deja espacio para el área de texto */
+    padding-bottom: 20px; /* Espacio adicional para evitar que el último mensaje se tape */
+}
+
+.areaTextoChat {
     position: absolute;
     bottom: 0;
-    width: 95%;
+    width: 100%;
+    padding: 10px;
+}
 
-
+.botonSend{
+    cursor: pointer;
 }

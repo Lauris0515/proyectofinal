@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
-import { getAuth,signInWithPopup, GoogleAuthProvider} from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js'
+import { getAuth,onAuthStateChanged, signOut} from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js'
 
 const firebaseConfig = {
     apiKey: "AIzaSyCG08oLt2BH2XelFls84QHJcDp_jAq6fxw",
